@@ -1,0 +1,105 @@
+.auth-bg {
+  background: url("https://i.pinimg.com/originals/9f/74/ff/9f74ffc5d5b9724b7a6d0b8b1655fd19.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.home-bg {
+  background: url("https://i.pinimg.com/originals/9f/74/ff/9f74ffc5d5b9724b7a6d0b8b1655fd19.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.3); 
+  min-height: 100vh;
+  width: 100%;
+}
+
+.auth-card {
+  max-width: 400px;
+  width: 100%;
+  padding: 35px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.auth-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+
+.auth-btn {
+  border-radius: 30px;
+  padding: 12px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.auth-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(221, 36, 118, 0.6);
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  border-radius: 18px;
+  padding: 25px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+}
+
+.text-white {
+  color: white !important;
+}
+
+input.form-control {
+  border-radius: 25px;
+  padding: 10px 15px;
+  border: none;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+input.form-control::placeholder {
+  color: #ddd;
+}
+
+input.form-control:focus {
+  box-shadow: 0 0 10px rgba(255, 81, 47, 0.8);
+  background: rgba(255,255,255,0.3);
+}
+
+@media (max-width: 768px) {
+  .auth-card {
+    margin: 20px;
+    padding: 25px;
+  }
+}
+
+.form-check-input:checked {
+  background-color: #ff512f;
+  border-color: #ff512f;
+}
