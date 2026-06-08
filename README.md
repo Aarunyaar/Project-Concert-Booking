@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# 🎵 Concert Booking System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application that allows users to browse concerts and book tickets online. Built with **Django REST Framework** (backend) and **React.js** (frontend), connected via REST APIs.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 🔐 User Registration and Login with authentication
+- 🎤 Browse available concerts with details
+- 🎟️ Book tickets for selected concerts
+- 📋 View and manage personal bookings
+- 🔌 REST API backend tested with Postman
+- 📱 Responsive UI built with Bootstrap and CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+| Layer | Technology |
+|---|---|
+| Frontend | React.js, JavaScript, HTML, CSS, Bootstrap |
+| Backend | Python, Django, Django REST Framework |
+| Database | MySQL, SQLite |
+| API Testing | Postman |
+| Version Control | Git, GitHub |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Project-Concert-Booking/
+│
+├── manage.py                 # Django project manager
+├── db.sqlite3                # SQLite database
+│
+├── App.js                    # Main React component
+├── App.css                   # Main styles
+├── App.test.js               # React tests
+│
+├── Login.js                  # Login page component
+├── Register.js               # Registration page component
+│
+├── index.js                  # React entry point
+├── index.css                 # Global styles
+├── logo.svg                  # App logo
+│
+├── reportWebVitals.js        # Performance reporting
+├── setupTests.js             # Test setup
+├── package.json              # Node dependencies
+└── README.md
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ How to Run Locally
 
-### `npm run eject`
+### Backend Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+python manage.py migrate
+python manage.py runserver
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Frontend Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm install
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The app runs at `http://localhost:3000` and API at `http://localhost:8000`
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📡 API Endpoints
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | /api/register/ | Register new user |
+| POST | /api/login/ | User login |
+| GET | /api/concerts/ | Get all concerts |
+| POST | /api/bookings/ | Book a concert ticket |
+| GET | /api/bookings/ | Get user bookings |
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 👩‍💻 Developer
 
-### Analyzing the Bundle Size
+**Aarunya Retheep**
+- 🔗 LinkedIn: https://linkedin.com/in/aarunya-retheep
+- 🐙 GitHub: https://github.com/Aarunyaar
+- 📧 Email: aarunyaretheep003@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the MIT License.
